@@ -14,7 +14,7 @@
 ## 使用说明
 1. 克隆仓库：
 	```bash
-	git clone <仓库地址>
+	git clone https://github.com/zhengyinloong/Minecraft_saves.git
 	```
 2. 恢复到本地 Minecraft：将本仓库中的整个存档目录（本目录）复制到你的 Minecraft 安装目录下的 `saves` 文件夹中，路径示例：
 	- Windows: `%appdata%\.minecraft\saves\<worldname>`
