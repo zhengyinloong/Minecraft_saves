@@ -1,0 +1,10 @@
+# Minecraft saves - 可按需修改
+# session.lock
+# *.log
+# *.tmp
+# *.old
+# 如果你使用 LFS 跟踪某些二进制（例如 .mca），不要把它们加入 gitignore
+# 例如，如果你不想上传 region 文件：
+# region/
+# DIM-1/region/
+# DIM1/region/
