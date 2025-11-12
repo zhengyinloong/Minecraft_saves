@@ -1,0 +1,7 @@
+# Git LFS attributes for Minecraft saves
+# Track Minecraft region files and common binary save files with LFS
+*.mca filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
+
+# If you want to be more specific, you can scope patterns to paths:
+# MCGame-*/region/*.mca filter=lfs diff=lfs merge=lfs -text

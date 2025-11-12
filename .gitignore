@@ -1,10 +1,35 @@
 # Minecraft saves - 可按需修改
-# session.lock
-# *.log
-# *.tmp
-# *.old
-# 如果你使用 LFS 跟踪某些二进制（例如 .mca），不要把它们加入 gitignore
-# 例如，如果你不想上传 region 文件：
+# 说明：不要把被 Git LFS 跟踪的二进制文件（例如 *.mca）加入 .gitignore，
+# 否则这些文件将不会被 Git/LFS 管理。若你希望完全排除 region 文件，请取消注释下面的 region/ 行。
+
+# 临时/锁文件
+session.lock
+*.log
+*.tmp
+*.old
+*.bak
+
+# Minecraft world metadata backups (通常不需要版本控制)
+level.dat_old
+*.dat_old
+
+# 玩家数据（如果你希望也由 LFS 管理，可在 .gitattributes 中添加规则）
+# 如果你不想将 playerdata 上传到仓库，可取消注释下面一行
+# playerdata/
+
+# 编辑器/IDE 与系统文件
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 压缩包 / 备份档案
+*.zip
+*.tar
+*.tar.gz
+
+# 如果你决定完全不把 region 文件加入版本库（不可与 LFS 同时使用），
+# 取消注释下面这些行。但当前仓库使用 Git LFS 存储 .mca，请不要取消注释。
 # region/
 # DIM-1/region/
 # DIM1/region/
